@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: OAUTH2 CLIENT SERVICE
+  security:
+    oauth2:
+      client:
+        provider: #This list all the authorization server providers that this server can connect to for oauth2 tokens
+          spring-auth-server:
+            issuerUri:
+        registration:
+          oauth2-gateway:
+
+
+
+com:
+  emerson:
+    oauth2client:
+      config:
+        extraAuthorizationRequestParams:
+          oauth2-gateway:
+            test:
+              - users:get
+              - users:list

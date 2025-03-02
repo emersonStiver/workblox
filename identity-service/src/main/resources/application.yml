@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: identity-service
+
+
+com:
+  emerson:
+    authserver:
+      config:
+        mfaEndpoints:
+          Email: "/mfa/verifyEmailCode"
+          Authenticator: "/mfa/verifyAuthenticatorCode"
